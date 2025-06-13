@@ -1,0 +1,434 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: "Audiowide", sans-serif;
+  font-size: 12px;
+  background: #00070e;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1{
+  padding: 0 0 2.5rem 0;
+}
+
+/* Header */
+.top {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00c1e5;
+}
+
+.logo img {
+  width: 5.7rem;
+  height: auto;
+}
+
+.menu-countainer {
+  display: none;
+}
+
+.btn-menu {
+  background: none;
+  border: none;
+}
+
+.btn-menu img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.menu {
+  width: 16rem;
+  height: 50vh;
+  background-color: #01313a;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 1s ease;
+}
+
+.menu ul {
+  gap: 0.6rem;
+  margin: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  list-style: none;
+  align-items: start;
+  justify-content: start;
+}
+
+.menu ul li {
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+}
+
+.menu a {
+  width: 12rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.menu img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.menu-countainer-logo {
+  display: none;
+}
+
+.btn-fechar{
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: none;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+
+/* Main */
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cards {
+  width: 80%;
+  padding: 0 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  height: 30rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #01313a;
+  border-radius: 1.5rem;
+  gap: 0.4rem;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-0.3125rem); 
+  box-shadow: 0 0 50px rgba(0, 193, 229, 0.25);
+}
+
+.card img {
+  height: 12rem;
+  width: 8rem;
+}
+
+.icons a img {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.2s;
+}
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+.name {
+  font-size: 1.5rem;
+}
+.turma {
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1a2b2e;
+  color: #00c1e5;
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  margin-top: auto;
+  padding: 5rem ;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* Responsivo */
+@media (min-width: 320px) {
+  .texts {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 600px ) {
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 90%;
+    z-index: 10;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .logo img {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .menu-countainer-logo {
+    display: none;
+  }
+
+  .menu-countainer {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.7rem;
+    width: 90%;
+  }
+
+  .menu-countainer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .menu-countainer ul a {
+    text-decoration: none;
+    color: #00c1e5;
+  }
+
+  .menu-countainer ul a:hover {
+    color: #028ba3;
+  }
+
+  main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards {
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    flex-grow: initial;
+    gap: 4rem;
+  }
+
+  .card {
+    height: 36rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #01313a;
+    border-radius: 1.5rem;
+    gap: 1rem;
+  }
+
+  .card img {
+    height: 20rem;
+    width: 14rem;
+  }
+
+  .icons a img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .turma {
+    font-size: 1.5rem;
+  }
+  footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 0.8rem;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #00c1e5;
+  }
+}
+
+@media (min-width: 1025px) {
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 90%;
+    z-index: 10;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .logo img {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .menu-countainer-logo {
+    display: none;
+  }
+
+  .menu-countainer {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.7rem;
+    width: 90%;
+  }
+
+  .menu-countainer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .menu-countainer ul a {
+    text-decoration: none;
+    color: #00c1e5;
+  }
+
+  .menu-countainer ul a:hover {
+    color: #028ba3;
+  }
+
+  main {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .card {
+    height: 45rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #01313a;
+    border-radius: 1.5rem;
+    gap: 1rem;
+  }
+
+  .card img {
+    height: 30rem;
+    width: 22rem;
+  }
+
+  .icons a img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .turma {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 0.8rem;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #00c1e5;
+  }
+}
