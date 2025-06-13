@@ -6,7 +6,6 @@
 
 - 🔍 Localização de **abrigos próximos** com base no bairro informado
 - 📢 Alerta de **níveis de risco** por região (verde, amarelo, laranja, vermelho)
-- 🤖 **Chatbot inteligente** com perguntas frequentes e suporte por voz
 - 🖥️ Site 100% **responsivo** (mobile-first)
 - 📄 Página de **FAQ com orientações** de segurança
 - 🧑‍🤝‍🧑 Foco em **acessibilidade e suporte para idosos e PCDs**
